@@ -22,9 +22,14 @@ public class f9 : MonoBehaviour
         {
             UiObject.SetActive(true);
             LookAtTarget.target = target;
-            Camera.main.fieldOfView = Mathf.Clamp(20 * target.transform.localScale.x, 1, 100);
+            Camera.main.fieldOfView = Mathf.Clamp(30 * target.transform.localScale.x, 1, 100);
             
-        }        
+        }  
+
+        if (Input.GetKeyDown(KeyCode.F10))
+        {
+            UiObject.SetActive(false);
+        }
 
     }
 

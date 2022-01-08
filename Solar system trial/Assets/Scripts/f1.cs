@@ -22,5 +22,10 @@ public class f1 : MonoBehaviour
             LookAtTarget.target = target;
             Camera.main.fieldOfView = Mathf.Clamp(10 * target.transform.localScale.x, 1, 100);
         }
+        if (Input.GetKeyDown(KeyCode.F10))
+        {
+            UiObject.SetActive(false);
+        }
+
     }
 }
