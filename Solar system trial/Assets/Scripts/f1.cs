@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class f1 : MonoBehaviour
 {
+    public GameObject UiObject;
     public GameObject target;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+       UiObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -17,6 +18,7 @@ public class f1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {
+            UiObject.SetActive(true);
             LookAtTarget.target = target;
             Camera.main.fieldOfView = Mathf.Clamp(10 * target.transform.localScale.x, 1, 100);
         }

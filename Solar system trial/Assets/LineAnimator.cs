@@ -1,5 +1,4 @@
-﻿
-using UnityEngine ;
+﻿using UnityEngine ;
 using System.Collections ;
 
 public class LineAnimator : MonoBehaviour {
@@ -22,7 +21,7 @@ public class LineAnimator : MonoBehaviour {
       StartCoroutine (AnimateLine ()) ;
    }
 
-   private IEnumerator AnimateLine () {
+   public IEnumerator AnimateLine () {
       float segmentDuration = animationDuration / pointsCount ;
 
       for (int i = 0; i < pointsCount - 1; i++) {
