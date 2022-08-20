@@ -480,7 +480,7 @@ public class LineAnimator : MonoBehaviour {
    }
 }
                                                 
-# //Constellations - Orion
+# //Constellations - Orion Constellation
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -555,7 +555,7 @@ public class L : MonoBehaviour
             LookAtTarget.target = target;
             Camera.main.fieldOfView = Mathf.Clamp(50 * target.transform.localScale.x, 1, 100);
 
-        }
+        } 
     }
 }                                                
 
